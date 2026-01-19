@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn more about Ang - self-help author dedicated to helping you live a balanced, mindful life.">
+
+    <title>About | Ang</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">
+                <img src="images/logo.png" alt="Ang Logo" style="height: 40px; width: auto;">
+            </a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="about.html" class="nav__link nav__link--active">About</a></li>
+                <li><a href="books.html" class="nav__link">Books</a></li>
+                <li><a href="blog.html" class="nav__link">Blog</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero section" style="padding-top: calc(var(--space-24) + 60px);">
+        <div class="container">
+            <div class="about-hero__visual">
+                <div class="about-hero__visual-shape about-hero__visual-shape--1"></div>
+                <div class="about-hero__visual-shape about-hero__visual-shape--2"></div>
+                <svg class="about-hero__visual-icon" width="48" height="48" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+            <h1 class="text-accent" data-content="about_title">Hi, I'm Ang</h1>
+            <p class="about-hero__subtitle" data-content="about_subtitle"
+                style="max-width: 600px; margin: var(--space-6) auto 0; color: var(--color-text-light); font-size: var(--text-lg);">
+                Self-help author, speaker, and your companion on the journey to becoming your best self.
+            </p>
+        </div>
+    </section>
+
+    <!-- My Story -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="about-content animate-slide-left">
+                <div>
+                    <h2>My Story</h2>
+                    <p class="mt-4" data-content="about_story_1">
+                        Like many of you, I didn't always have it figured out. I spent years searching for meaning,
+                        struggling with self-doubt, and wondering if there was more to life than just going through the
+                        motions.
+                    </p>
+                    <p data-content="about_story_2">
+                        Through my own journey of self-discovery—filled with challenges, breakthroughs, and countless
+                        lessons—I found my calling: helping others navigate their own paths to personal growth.
+                    </p>
+                    <p data-content="about_story_3">
+                        Today, I write books and share insights that I wish someone had shared with me. My approach
+                        is practical, heart-centered, and rooted in the belief that everyone deserves to live a
+                        life that feels authentic and fulfilling.
+                    </p>
+                </div>
+                <div
+                    style="background: linear-gradient(135deg, var(--color-sage-light), var(--color-cream-dark)); border-radius: var(--radius-xl); min-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="section">
+        <div class="container container--narrow text-center">
+            <h2 class="animate-on-scroll">My Mission</h2>
+            <blockquote
+                style="font-family: var(--font-heading); font-size: var(--text-3xl); font-style: italic; color: var(--color-terracotta); margin: var(--space-8) 0; line-height: 1.4;"
+                data-content="about_mission_quote">
+                "To help you discover the wisdom within yourself and give you the practical tools to create
+                a life you truly love."
+            </blockquote>
+            <p data-content="about_mission_text">
+                I believe that self-improvement shouldn't feel like a chore. It should feel like coming home
+                to yourself—gentle, nurturing, and deeply transformative.
+            </p>
+        </div>
+    </section>
+
+    <!-- What I Believe -->
+    <section class="section section--alt">
+        <div class="container">
+            <h2 class="text-center mb-12 animate-on-scroll">What I Believe</h2>
+            <div class="stagger-children"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-8);">
+                <div class="blog-card animate-on-scroll" style="padding: var(--space-8); text-align: center;">
+                    <div
+                        style="width: 60px; height: 60px; background-color: var(--color-sage-light); border-radius: var(--radius-full); margin: 0 auto var(--space-4); display: flex; align-items: center; justify-content: center;">
+                        <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            style="color: var(--color-sage-dark);">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h4>Self-Compassion First</h4>
+                    <p style="color: var(--color-text-light); margin-top: var(--space-3);">
+                        Real growth starts with being kind to yourself. You can't heal what you won't acknowledge with
+                        love.
+                    </p>
+                </div>
+                <div class="blog-card animate-on-scroll" style="padding: var(--space-8); text-align: center;">
+                    <div
+                        style="width: 60px; height: 60px; background-color: var(--color-terracotta-light); border-radius: var(--radius-full); margin: 0 auto var(--space-4); display: flex; align-items: center; justify-content: center;">
+                        <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            style="color: var(--color-terracotta-dark);">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h4>Progress Over Perfection</h4>
+                    <p style="color: var(--color-text-light); margin-top: var(--space-3);">
+                        Small, consistent steps lead to lasting change. Perfection is the enemy of progress.
+                    </p>
+                </div>
+                <div class="blog-card animate-on-scroll" style="padding: var(--space-8); text-align: center;">
+                    <div
+                        style="width: 60px; height: 60px; background-color: var(--color-sage-light); border-radius: var(--radius-full); margin: 0 auto var(--space-4); display: flex; align-items: center; justify-content: center;">
+                        <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            style="color: var(--color-sage-dark);">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h4>You Have the Answers</h4>
+                    <p style="color: var(--color-text-light); margin-top: var(--space-3);">
+                        My role is to help you access the wisdom you already carry within. You are your own best guide.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="newsletter__title">Join My Community</h2>
+            <p class="newsletter__text">
+                Get weekly insights, exclusive content, and early access to new releases.
+            </p>
+            <form class="newsletter__form" action="#" method="post">
+                <input type="email" class="newsletter__input" placeholder="Enter your email" required>
+                <button type="submit" class="newsletter__btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <h3 class="footer__brand">Ang</h3>
+                    <p class="footer__tagline">
+                        Helping you discover your inner strength and live a more intentional, fulfilling life.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__title">Resources</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Free Guides</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Media Kit</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__title">Connect</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Goodreads</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Ang. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('nav__links--open');
+        });
+
+        // Scroll Animation Observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+    <!-- Dynamic Content Loading -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-config.js"></script>
+    <script src="js/content-loader.js"></script>
+    <script>initPageContent('about');</script>
+</body>
+
+</html>

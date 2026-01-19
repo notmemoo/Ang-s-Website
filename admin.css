@@ -1,0 +1,412 @@
+/* ============================================
+   ADMIN PANEL STYLES
+   Clean, simple interface for non-technical users
+   ============================================ */
+
+:root {
+    --admin-primary: #9CAF88;
+    --admin-primary-dark: #7A8F6A;
+    --admin-accent: #C4704F;
+    --admin-bg: #F8F9FA;
+    --admin-card: #FFFFFF;
+    --admin-text: #2D3748;
+    --admin-text-light: #718096;
+    --admin-border: #E2E8F0;
+    --admin-success: #48BB78;
+    --admin-error: #F56565;
+    --admin-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --admin-radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--admin-bg);
+    color: var(--admin-text);
+    line-height: 1.6;
+}
+
+/* ---- Login Screen ---- */
+.login-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #F0F4EF 0%, #FDF8F3 100%);
+}
+
+.login-card {
+    background: var(--admin-card);
+    border-radius: var(--admin-radius);
+    box-shadow: var(--admin-shadow);
+    padding: 48px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.login-header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: var(--admin-text);
+}
+
+.login-header p {
+    color: var(--admin-text-light);
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.login-form {
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--admin-text);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 2px solid var(--admin-border);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: var(--admin-primary);
+}
+
+.login-hint {
+    font-size: 14px;
+    color: var(--admin-text-light);
+    margin-top: 16px;
+    text-align: center;
+}
+
+.check-email {
+    padding: 20px 0;
+}
+
+.check-email-icon {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.check-email h2 {
+    margin-bottom: 12px;
+}
+
+.check-email p {
+    margin-bottom: 8px;
+}
+
+.login-error {
+    background: #FED7D7;
+    color: var(--admin-error);
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+    width: 100%;
+    padding: 14px 24px;
+    background: var(--admin-primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+    background: var(--admin-primary-dark);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    padding: 12px 20px;
+    background: transparent;
+    color: var(--admin-primary);
+    border: 2px solid var(--admin-primary);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    background: var(--admin-primary);
+    color: white;
+}
+
+/* ---- Dashboard Layout ---- */
+.admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ---- Sidebar ---- */
+.sidebar {
+    width: 260px;
+    background: var(--admin-card);
+    border-right: 1px solid var(--admin-border);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 24px;
+    border-bottom: 1px solid var(--admin-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-header h2 {
+    font-size: 20px;
+}
+
+.btn-logout {
+    padding: 8px 12px;
+    background: transparent;
+    color: var(--admin-text-light);
+    border: 1px solid var(--admin-border);
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-logout:hover {
+    background: var(--admin-error);
+    color: white;
+    border-color: var(--admin-error);
+}
+
+.sidebar-nav {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--admin-text);
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.nav-item:hover {
+    background: var(--admin-bg);
+}
+
+.nav-item.active {
+    background: var(--admin-primary);
+    color: white;
+}
+
+/* ---- Main Content ---- */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    background: var(--admin-card);
+    border-bottom: 1px solid var(--admin-border);
+}
+
+.content-header h1 {
+    font-size: 24px;
+}
+
+.btn-save {
+    padding: 12px 24px;
+    background: var(--admin-success);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-save:hover {
+    filter: brightness(1.1);
+}
+
+.btn-save:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.content-area {
+    flex: 1;
+    padding: 32px;
+    overflow-y: auto;
+}
+
+/* ---- Form Elements ---- */
+.form-section {
+    background: var(--admin-card);
+    border-radius: var(--admin-radius);
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--admin-shadow);
+}
+
+.form-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--admin-border);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--admin-text);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    font-family: inherit;
+    border: 2px solid var(--admin-border);
+    border-radius: 8px;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--admin-primary);
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-group .hint {
+    font-size: 13px;
+    color: var(--admin-text-light);
+    margin-top: 6px;
+}
+
+/* ---- Save Status ---- */
+.save-status {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.save-status.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.save-status.success {
+    background: var(--admin-success);
+    color: white;
+}
+
+.save-status.error {
+    background: var(--admin-error);
+    color: white;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+    .admin-dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--admin-border);
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 12px;
+    }
+
+    .nav-item {
+        white-space: nowrap;
+        padding: 12px 16px;
+    }
+
+    .content-header {
+        padding: 16px;
+    }
+
+    .content-area {
+        padding: 16px;
+    }
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ang - Self-help author helping you become your best self through practical wisdom for a balanced, mindful life.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ang | Self-Help Author">
+  <meta property="og:description" content="Practical wisdom for a balanced, mindful life.">
+  <meta property="og:type" content="website">
+
+  <title>Ang | Self-Help Author</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/logo.png" alt="Ang Logo" style="height: 40px; width: auto;">
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="books.html" class="nav__link">Books</a></li>
+        <li><a href="blog.html" class="nav__link">Blog</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Decorative Leaves -->
+    <svg class="leaf-decoration leaf-decoration--top-right" viewBox="0 0 200 200" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 0C100 0 120 80 200 100C120 120 100 200 100 200C100 200 80 120 0 100C80 80 100 0 100 0Z"
+        fill="#9CAF88" />
+    </svg>
+    <svg class="leaf-decoration leaf-decoration--bottom-left" viewBox="0 0 200 200" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 0C100 0 120 80 200 100C120 120 100 200 100 200C100 200 80 120 0 100C80 80 100 0 100 0Z"
+        fill="#C4704F" />
+    </svg>
+
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <p class="hero__tagline" data-content="hero_tagline">Hi, I'm Angel</p>
+          <h1 class="hero__title">A Creative Soul Who Finds <span class="text-accent">Purpose in Words</span></h1>
+          <p class="hero__description" data-content="hero_description">
+            I write to help people feel seen, understood, and less alone. My books come from real
+            experiences and a genuine desire to inspire growth, healing, and a more peaceful mindset.
+          </p>
+          <div class="hero__buttons">
+            <a href="books.html" class="btn btn--primary btn--large">Explore My Books</a>
+            <a href="about.html" class="btn btn--secondary btn--large">Learn More</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__visual-inner">
+            <div class="hero__visual-shape hero__visual-shape--1"></div>
+            <div class="hero__visual-shape hero__visual-shape--2"></div>
+            <div class="hero__visual-shape hero__visual-shape--3"></div>
+            <svg class="hero__visual-icon" width="64" height="64" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Book Section -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="text-center mb-12 animate-on-scroll">
+        <h2>Latest Book</h2>
+        <p class="text-accent">Available Now</p>
+      </div>
+      <div class="about-content animate-on-scroll">
+        <div class="book-card__cover"
+          style="max-width: 300px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl);">
+          <img src="images/her-spirit-lives-cover.png" alt="Her Spirit Lives On Book Cover"
+            style="width: 100%; height: auto; object-fit: cover;">
+        </div>
+        <div>
+          <h3 data-content="featured_book_title">Her Spirit Lives On: A Comforting Guide to Healing from the Loss of a
+            Mother</h3>
+          <p class="mt-4" data-content="featured_book_description">
+            A tender and compassionate guide for anyone navigating the profound journey of grief. This book offers
+            gentle wisdom and heartfelt reflections to help you honor the memory of those you've lost while finding a
+            path toward healing.
+          </p>
+          <p data-content="featured_book_quote">
+            "A beautiful companion for the healing heart."
+          </p>
+          <div class="mt-8">
+            <a href="books.html" class="btn btn--primary">Learn More</a>
+            <a href="https://www.amazon.com/Her-Spirit-Lives-Comforting-Healing-ebook/dp/B0FLJNDD2X" target="_blank"
+              class="btn btn--secondary" data-content="featured_book_link">Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Blog Posts -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-12 animate-on-scroll">
+        <h2>From the Blog</h2>
+        <p>Thoughts on growth, mindfulness, and living intentionally</p>
+      </div>
+      <div class="blog-grid stagger-children">
+        <!-- Blog Post 1 -->
+        <article class="blog-card animate-on-scroll">
+          <div class="blog-card__image">
+            <img src="images/blog-1.jpg" alt="Blog post"
+              style="background: linear-gradient(45deg, var(--color-cream-dark), var(--color-sage-light)); min-height: 200px;">
+          </div>
+          <div class="blog-card__content">
+            <span class="blog-card__category">Personal Growth</span>
+            <h4 class="blog-card__title">Finding Peace in the Chaos</h4>
+            <p class="blog-card__excerpt">Simple practices to center yourself when life feels overwhelming...</p>
+            <span class="blog-card__meta">5 min read</span>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-card animate-on-scroll">
+          <div class="blog-card__image">
+            <img src="images/blog-2.jpg" alt="Blog post"
+              style="background: linear-gradient(45deg, var(--color-terracotta-light), var(--color-cream-dark)); min-height: 200px;">
+          </div>
+          <div class="blog-card__content">
+            <span class="blog-card__category">Mindfulness</span>
+            <h4 class="blog-card__title">The Power of Morning Rituals</h4>
+            <p class="blog-card__excerpt">How starting your day with intention can transform your life...</p>
+            <span class="blog-card__meta">4 min read</span>
+          </div>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article class="blog-card animate-on-scroll">
+          <div class="blog-card__image">
+            <img src="images/blog-3.jpg" alt="Blog post"
+              style="background: linear-gradient(45deg, var(--color-sage-light), var(--color-terracotta-light)); min-height: 200px;">
+          </div>
+          <div class="blog-card__content">
+            <span class="blog-card__category">Self-Discovery</span>
+            <h4 class="blog-card__title">Embracing Your Authentic Self</h4>
+            <p class="blog-card__excerpt">Why being true to yourself is the greatest gift you can give...</p>
+            <span class="blog-card__meta">6 min read</span>
+          </div>
+        </article>
+      </div>
+      <div class="text-center mt-12">
+        <a href="blog.html" class="btn btn--secondary">View All Posts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <h2 class="newsletter__title">Join the Community</h2>
+      <p class="newsletter__text">
+        Get weekly insights on personal growth, exclusive content, and early access to new releases.
+      </p>
+      <form class="newsletter__form" action="https://formspree.io/f/angellynn110407@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Newsletter Subscriber">
+        <input type="email" class="newsletter__input" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="newsletter__btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__brand">Ang</h3>
+          <p class="footer__tagline">
+            Helping you discover your inner strength and live a more intentional, fulfilling life.
+          </p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Resources</h4>
+          <ul class="footer__links">
+            <li><a href="#">Free Guides</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Media Kit</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Connect</h4>
+          <ul class="footer__links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Goodreads</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Ang. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile Navigation
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav__links--open');
+    });
+
+    // Scroll Animation Observer
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all elements with animation classes
+    document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+  <!-- Dynamic Content Loading -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/content-loader.js"></script>
+  <script>initPageContent('home');</script>
+</body>
+
+</html>

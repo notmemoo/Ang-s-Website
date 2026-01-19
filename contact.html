@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Ang for speaking, media, or collaboration inquiries.">
+    <title>Contact | Ang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-16);
+            align-items: start;
+        }
+
+        .contact-info {
+            background: var(--color-warm-white);
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+        }
+
+        .contact-item {
+            display: flex;
+            gap: var(--space-4);
+            margin-bottom: var(--space-6);
+        }
+
+        .contact-item__icon {
+            width: 48px;
+            height: 48px;
+            background: var(--color-sage-light);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-item__icon svg {
+            color: var(--color-sage-dark);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">
+                <img src="images/logo.png" alt="Ang Logo" style="height: 40px; width: auto;">
+            </a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="books.html" class="nav__link">Books</a></li>
+                <li><a href="blog.html" class="nav__link">Blog</a></li>
+                <li><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle"
+                aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: calc(var(--space-24) + 60px);">
+        <div class="container">
+            <div class="text-center mb-12 animate-on-scroll">
+                <h1 data-content="contact_title">Get in <span class="text-accent">Touch</span></h1>
+                <p style="max-width: 600px; margin: var(--space-4) auto 0; color: var(--color-text-light);"
+                    data-content="contact_subtitle">Have a
+                    question or want to work together? I'd love to hear from you.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="animate-slide-left">
+                    <form class="contact-form" action="https://formspree.io/f/angellynn110407@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--large" style="width: 100%;">Send
+                            Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info animate-slide-right">
+                    <h3 style="margin-bottom: var(--space-6);">Other Ways to Connect</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5>Email</h5>
+                            <p style="color: var(--color-text-light); font-size: var(--text-sm);"><a
+                                    href="mailto:angellynn110407@gmail.com"
+                                    data-content="contact_email">angellynn110407@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5>Social Media</h5>
+                            <p style="color: var(--color-text-light); font-size: var(--text-sm);"
+                                data-content="contact_social">
+                                @ang on Instagram,
+                                Twitter, Facebook</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5>Speaking & Media</h5>
+                            <p style="color: var(--color-text-light); font-size: var(--text-sm);">For speaking
+                                engagements and press, please mention in your message.</p>
+                        </div>
+                    </div>
+
+                    <hr style="border: none; border-top: 1px solid var(--color-cream-dark); margin: var(--space-8) 0;">
+
+                    <h4 style="margin-bottom: var(--space-4);">Media Kit</h4>
+                    <p
+                        style="color: var(--color-text-light); font-size: var(--text-sm); margin-bottom: var(--space-4);">
+                        Need author photos, bio, or book info for press coverage?</p>
+                    <a href="#" class="btn btn--secondary">Download Media Kit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <h3 class="footer__brand">Ang</h3>
+                    <p class="footer__tagline">Helping you live a more intentional, fulfilling life.</p>
+                </div>
+                <div>
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__title">Connect</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Ang. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation
+        document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('nav__links--open'));
+
+        // Scroll Animation Observer
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, observerOptions);
+        document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale').forEach(el => observer.observe(el));
+    </script>
+
+    <!-- Dynamic Content Loading -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-config.js"></script>
+    <script src="js/content-loader.js"></script>
+    <script>initPageContent('contact');</script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insights on personal growth and mindfulness from Ang.">
+    <title>Blog | Ang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .blog-header {
+            padding-top: calc(var(--space-24) + 60px);
+            padding-bottom: var(--space-12);
+        }
+
+        .category-filter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--space-3);
+            margin-top: var(--space-8);
+        }
+
+        .category-btn {
+            padding: var(--space-2) var(--space-5);
+            background: transparent;
+            border: 2px solid var(--color-cream-dark);
+            border-radius: var(--radius-full);
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            font-weight: 500;
+            color: var(--color-text);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+
+        .category-btn:hover,
+        .category-btn--active {
+            background: var(--color-sage);
+            border-color: var(--color-sage);
+            color: white;
+        }
+
+        .featured-post {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-10);
+            align-items: center;
+            padding: var(--space-10);
+            background: var(--color-warm-white);
+            border-radius: var(--radius-xl);
+            margin-bottom: var(--space-12);
+        }
+
+        .featured-post__image {
+            aspect-ratio: 16/10;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }
+
+        .featured-post__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .featured-post__badge {
+            display: inline-block;
+            background: var(--color-terracotta);
+            color: white;
+            font-size: var(--text-xs);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-full);
+            margin-bottom: var(--space-4);
+        }
+
+        @media (max-width: 768px) {
+            .featured-post {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">
+                <img src="images/logo.png" alt="Ang Logo" style="height: 40px; width: auto;">
+            </a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="books.html" class="nav__link">Books</a></li>
+                <li><a href="blog.html" class="nav__link nav__link--active">Blog</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle"
+                aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="blog-header section">
+        <div class="container text-center">
+            <h1>The <span class="text-accent">Blog</span></h1>
+            <p style="max-width: 600px; margin: var(--space-4) auto 0; color: var(--color-text-light);"
+                data-content="blog_subtitle">Thoughts on
+                personal growth, mindfulness, and intentional living.</p>
+            <div class="category-filter">
+                <button class="category-btn category-btn--active">All</button>
+                <button class="category-btn">Personal Growth</button>
+                <button class="category-btn">Mindfulness</button>
+                <button class="category-btn">Self-Discovery</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="featured-post animate-on-scroll">
+                <div class="featured-post__image">
+                    <img src="images/blog-featured.jpg" alt="Featured post"
+                        style="background: linear-gradient(135deg, var(--color-sage-light), var(--color-terracotta-light)); min-height: 300px;">
+                </div>
+                <div>
+                    <span class="featured-post__badge">Featured</span>
+                    <h2>Finding Peace in the Chaos</h2>
+                    <p style="color: var(--color-text-light); margin: var(--space-4) 0;">In a world that never stops
+                        moving, finding moments of stillness can feel impossible. Here are the simple practices that
+                        changed my relationship with stress...</p>
+                    <p
+                        style="font-size: var(--text-sm); color: var(--color-text-light); margin-bottom: var(--space-6);">
+                        January 15, 2026 • 8 min read</p>
+                    <a href="#" class="btn btn--primary">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-grid stagger-children">
+                <article class="blog-card animate-on-scroll">
+                    <div class="blog-card__image"><img src="images/blog-1.jpg" alt=""
+                            style="background: linear-gradient(45deg, var(--color-cream-dark), var(--color-sage-light)); min-height: 200px;">
+                    </div>
+                    <div class="blog-card__content">
+                        <span class="blog-card__category">Personal Growth</span>
+                        <h4 class="blog-card__title">The Power of Morning Rituals</h4>
+                        <p class="blog-card__excerpt">How starting your day with intention transforms your life...</p>
+                        <span class="blog-card__meta">January 10, 2026 • 5 min</span>
+                    </div>
+                </article>
+                <article class="blog-card animate-on-scroll">
+                    <div class="blog-card__image"><img src="images/blog-2.jpg" alt=""
+                            style="background: linear-gradient(45deg, var(--color-terracotta-light), var(--color-cream-dark)); min-height: 200px;">
+                    </div>
+                    <div class="blog-card__content">
+                        <span class="blog-card__category">Self-Discovery</span>
+                        <h4 class="blog-card__title">Embracing Your Authentic Self</h4>
+                        <p class="blog-card__excerpt">Why being true to yourself is the greatest gift...</p>
+                        <span class="blog-card__meta">January 5, 2026 • 6 min</span>
+                    </div>
+                </article>
+                <article class="blog-card animate-on-scroll">
+                    <div class="blog-card__image"><img src="images/blog-3.jpg" alt=""
+                            style="background: linear-gradient(45deg, var(--color-sage-light), var(--color-terracotta-light)); min-height: 200px;">
+                    </div>
+                    <div class="blog-card__content">
+                        <span class="blog-card__category">Mindfulness</span>
+                        <h4 class="blog-card__title">The Art of Letting Go</h4>
+                        <p class="blog-card__excerpt">Learning to release what no longer serves you...</p>
+                        <span class="blog-card__meta">December 28, 2025 • 7 min</span>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center mt-12"><button class="btn btn--secondary">Load More Posts</button></div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="newsletter__title">Never Miss a Post</h2>
+            <p class="newsletter__text">Get new articles delivered to your inbox every week.</p>
+            <form class="newsletter__form" action="https://formspree.io/f/angellynn110407@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Newsletter Subscriber"><input type="email"
+                    class="newsletter__input" name="email" placeholder="Enter your email" required><button type="submit"
+                    class="newsletter__btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <h3 class="footer__brand">Ang</h3>
+                    <p class="footer__tagline">Helping you live a more intentional, fulfilling life.</p>
+                </div>
+                <div>
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__title">Connect</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Ang. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation
+        document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('nav__links--open'));
+
+        // Category Filter
+        document.querySelectorAll('.category-btn').forEach(btn => btn.addEventListener('click', () => {
+            document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('category-btn--active'));
+            btn.classList.add('category-btn--active');
+        }));
+
+        // Scroll Animation Observer
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, observerOptions);
+        document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale').forEach(el => observer.observe(el));
+    </script>
+
+    <!-- Dynamic Content Loading -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-config.js"></script>
+    <script src="js/content-loader.js"></script>
+    <script>initPageContent('blog');</script>
+</body>
+
+</html>

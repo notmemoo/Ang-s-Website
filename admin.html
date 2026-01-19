@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Angel's Website</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <!-- Login Screen -->
+    <div id="loginScreen" class="login-screen">
+        <div class="login-card">
+            <div class="login-header">
+                <h1>✨ Angel's Website</h1>
+                <p>Admin Panel</p>
+            </div>
+
+            <div id="loginForm" class="login-form">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="angel@example.com" required>
+                <button id="sendMagicLink" class="btn-primary">Send Magic Link</button>
+                <p class="login-hint">We'll send you a login link - no password needed!</p>
+            </div>
+
+            <div id="checkEmail" class="check-email" style="display: none;">
+                <div class="check-email-icon">📧</div>
+                <h2>Check Your Email!</h2>
+                <p>We sent a magic link to <strong id="sentToEmail"></strong></p>
+                <p class="login-hint">Click the link in the email to log in.</p>
+                <button id="tryAgain" class="btn-secondary">Use Different Email</button>
+            </div>
+
+            <div id="loginError" class="login-error" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="adminDashboard" class="admin-dashboard" style="display: none;">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>✨ Admin</h2>
+                <button id="logoutBtn" class="btn-logout">Logout</button>
+            </div>
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-section="home">🏠 Home Page</button>
+                <button class="nav-item" data-section="about">👤 About Page</button>
+                <button class="nav-item" data-section="books">📚 Books</button>
+                <button class="nav-item" data-section="blog">📝 Blog Posts</button>
+                <button class="nav-item" data-section="contact">📧 Contact</button>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="content-header">
+                <h1 id="sectionTitle">Home Page</h1>
+                <button id="saveBtn" class="btn-save">💾 Save Changes</button>
+            </header>
+
+            <div id="contentArea" class="content-area">
+                <!-- Content loaded dynamically -->
+            </div>
+
+            <div id="saveStatus" class="save-status"></div>
+        </main>
+    </div>
+
+    <script src="js/supabase-config.js"></script>
+    <script src="admin.js"></script>
+</body>
+
+</html>
