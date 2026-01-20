@@ -56,7 +56,7 @@ async function sendMagicLink() {
         const { error } = await supabaseClient.auth.signInWithOtp({
             email: email,
             options: {
-                emailRedirectTo: window.location.origin + '/admin.html'
+                emailRedirectTo: 'https://angsite.vercel.app/admin.html'
             }
         });
 
