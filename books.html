@@ -112,8 +112,9 @@
 
     <section class="section" style="padding-top: calc(var(--space-24) + 60px); padding-bottom: var(--space-8);">
         <div class="container text-center">
-            <h1>My <span class="text-accent">Books</span></h1>
-            <p style="max-width: 600px; margin: var(--space-4) auto 0; color: var(--color-text-light);"
+            <h1 class="animate-fade-up">My <span class="text-accent">Books</span></h1>
+            <p class="animate-fade-up"
+                style="max-width: 600px; margin: var(--space-4) auto 0; color: var(--color-text-light);"
                 data-content="books_subtitle">Each book is
                 written to help you on your journey to becoming your best self.</p>
         </div>
@@ -229,7 +230,7 @@
                 if (entry.isIntersecting) entry.target.classList.add('visible');
             });
         }, observerOptions);
-        document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale').forEach(el => observer.observe(el));
+        document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale, .animate-fade-up').forEach(el => observer.observe(el));
     </script>
 
     <!-- Dynamic Content Loading -->

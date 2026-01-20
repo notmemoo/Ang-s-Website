@@ -110,11 +110,12 @@
 
     <section class="blog-header section">
         <div class="container text-center">
-            <h1>The <span class="text-accent">Blog</span></h1>
-            <p style="max-width: 600px; margin: var(--space-4) auto 0; color: var(--color-text-light);"
+            <h1 class="animate-fade-up">The <span class="text-accent">Blog</span></h1>
+            <p class="animate-fade-up"
+                style="max-width: 600px; margin: var(--space-4) auto 0; color: var(--color-text-light);"
                 data-content="blog_subtitle">Thoughts on
                 personal growth, mindfulness, and intentional living.</p>
-            <div class="category-filter">
+            <div class="category-filter animate-on-scroll">
                 <button class="category-btn category-btn--active">All</button>
                 <button class="category-btn">Personal Growth</button>
                 <button class="category-btn">Mindfulness</button>
@@ -242,7 +243,7 @@
                 if (entry.isIntersecting) entry.target.classList.add('visible');
             });
         }, observerOptions);
-        document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale').forEach(el => observer.observe(el));
+        document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale, .animate-fade-up').forEach(el => observer.observe(el));
     </script>
 
     <!-- Dynamic Content Loading -->

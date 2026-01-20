@@ -44,7 +44,7 @@
     <!-- About Hero -->
     <section class="about-hero section" style="padding-top: calc(var(--space-24) + 60px);">
         <div class="container">
-            <div class="about-hero__visual">
+            <div class="about-hero__visual animate-scale">
                 <div class="about-hero__visual-shape about-hero__visual-shape--1"></div>
                 <div class="about-hero__visual-shape about-hero__visual-shape--2"></div>
                 <svg class="about-hero__visual-icon" width="48" height="48" fill="none" viewBox="0 0 24 24"
@@ -53,8 +53,8 @@
                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
             </div>
-            <h1 class="text-accent" data-content="about_title">Hi, I'm Ang</h1>
-            <p class="about-hero__subtitle" data-content="about_subtitle"
+            <h1 class="text-accent animate-fade-up" data-content="about_title">Hi, I'm Ang</h1>
+            <p class="about-hero__subtitle animate-fade-up" data-content="about_subtitle"
                 style="max-width: 600px; margin: var(--space-6) auto 0; color: var(--color-text-light); font-size: var(--text-lg);">
                 Self-help author, speaker, and your companion on the journey to becoming your best self.
             </p>
@@ -260,7 +260,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale').forEach(el => {
+        document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale, .animate-fade-up').forEach(el => {
             observer.observe(el);
         });
     </script>
