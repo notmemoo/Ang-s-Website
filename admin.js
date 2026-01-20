@@ -30,6 +30,36 @@ let contentCache = {};
 
 // Check if user is logged in on page load
 async function checkAuth() {
+    // First, check if we have a hash fragment with tokens (from magic link)
+    const hashParams = new URLSearchParams(window.location.hash.substring(1));
+    const accessToken = hashParams.get('access_token');
+    const refreshToken = hashParams.get('refresh_token');
+
+    if (accessToken && refreshToken) {
+        // We have tokens from a magic link - set the session
+        try {
+            const { data, error } = await supabaseClient.auth.setSession({
+                access_token: accessToken,
+                refresh_token: refreshToken
+            });
+
+            if (error) throw error;
+
+            // Clear the hash from URL for cleaner look
+            window.history.replaceState(null, '', window.location.pathname);
+
+            if (data.session) {
+                showDashboard();
+                loadContent(currentSection);
+                return;
+            }
+        } catch (error) {
+            console.error('Error setting session from magic link:', error);
+            showError('Login failed. Please try again.');
+        }
+    }
+
+    // Check for existing session
     const { data: { session } } = await supabaseClient.auth.getSession();
 
     if (session) {
